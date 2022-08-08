@@ -53,6 +53,13 @@ Git의 주요 목적 중 하나인 협업을 위해 로컬 저장소와 원격 �
    -  **등록**
     
     `git remote add <이름> <주소>` 형식으로 작성합니다.
+    
+    $ git remote add origin https://github.com/edukyle/TIL.git
+    [풀이]
+    git 명령어를 작성할건데, remote(원격 저장소)에 add(추가) 한다.
+    origin이라는 이름으로 https://github.com/edukyle/TIL.git라는 주소의 원격 저장소를
+    
+
    -  **조회**
     
     `git remote -v` 로 작성합니다.
