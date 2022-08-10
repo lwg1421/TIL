@@ -43,3 +43,15 @@ bicycle_3 = FoldingBicycle()
 bicycle_3.fold()
 bicycle_3.unfold()
 ```
+
+```python
+class Student_next(Student):
+  def __init__(self,name,age):
+    Student.__init__(self,name,age)
+  def next(self):
+    self.next = input("다음 과목 :")
+    print("{}학생의 다음 시간 과목은 {}입니다.".format(self.name,self.next))
+
+student_3 = Student_next('나송미',26)
+student_3.next()
+```
