@@ -68,3 +68,26 @@ for i in range(len(coffee_menu_list)):
   coffee_menu_list_real.append(coffee)
 print(coffee_menu_list_real)
 ```
+
+## 문자열 연결하기 
+### join()
+- 리스트의 모든 항목을 연결하여 하나의 문자열로 만듦
+- join() 메서드 사용방법
+> str.join(seq)
+> - str자리에는 항목들을 연결할 내용을 넣음
+> - seq 자리에는 리스트를 넣음
+> 예시
+ ```python
+address_list = ["서울시","서초구","반포대로","201(반포동)"]
+a = " "
+a.join(address_list)
+```
+- 출력 : 서울시 서초구 반포대로 201(반포동)
+
+```python
+introduce = "안녕하세요. 저는 26살 이원근입니다. 현재 멀티캠퍼스에서 코딩 공부를 하는 중입니다."
+introduce_list = introduce.split(" ")
+print(introduce_list)
+introduce_new = "-".join(introduce_list)
+print(introduce_new)
+```
