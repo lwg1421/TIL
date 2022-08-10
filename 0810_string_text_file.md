@@ -94,3 +94,39 @@ print(introduce_new)
 - 출력
 - ['안녕하세요.', '저는', '26살', '이원근입니다.', '현재', '멀티캠퍼스에서', '코딩', '공부를', '하는', '중입니다.']
 - 안녕하세요.-저는-26살-이원근입니다.-현재-멀티캠퍼스에서-코딩-공부를-하는-중입니다.
+
+## 문자열 찾기
+### find()
+- 문자열에서 찾으려는 검색 문자열과 첫번째로 일치하는 문자열의 위치를 반환
+- 위치는 좌측에서 0부터 시작함
+- 일치하는 문자열이 없다면 **-1**을 반환
+> str.find("찾을문자열")
+```python
+str_1 = "Python Code Python Code Python Code"
+str_1.find("Code")
+```
+- 출력
+- 7
+
+### count()
+- 해당 문자열이 몇 번 나오는지 알고싶다면 count() 메서드를 이용
+- 찾고자하는 문자열과 일치하는 횟수를 반환함.
+- 일치하는 문자열이 없다면 0을 반환
+> str.count("찾을 문자열")
+```python
+str_1 = "Python Code Python Code Python Code"
+str_1.count("Python")
+```
+- 결과
+- 3
+
+### replace()
+- 문자열에서 지정한 문자열을 찾아서 새로운 문자열로 바꿈
+> str.replace("바꾸기전","바꾼후",앞에서부터 갯수)
+
+```python
+str_1 = "Python Code Python Code Python Code"
+str_1.replace("Python","R",2).replace("Code","Program")
+```
+- 출력
+- R Program R Program Python Program
